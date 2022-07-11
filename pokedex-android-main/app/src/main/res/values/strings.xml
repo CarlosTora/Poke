@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="NA"> </string>
+    <string name="itemText"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_pokemon">PokemonActivity</string>
+    <string name="hello_world">Hello Square World!</string>
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    tools:context=".pokemon.view.PokemonActivity">
+
+    <ImageView
+        android:id="@+id/pokemonImageEnhanced"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <TextView
+        android:id="@+id/pokemonTypeOneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pokemonTypeTwoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonImageEnhanced"
+        app:layout_constraintVertical_bias="0.076"
+        tools:text="Fire" />
+
+    <TextView
+        android:id="@+id/pokemonTypeTwoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pokemonTypeOneTextView"
+        app:layout_constraintTop_toBottomOf="@id/pokemonImageEnhanced"
+        app:layout_constraintVertical_bias="0.076"
+        tools:text="Wind" />
+
+    <TextView
+        android:id="@+id/statOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="128dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        tools:text="HP" />
+
+    <TextView
+        android:id="@+id/statTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="96dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statOne"
+        app:layout_constraintVertical_bias="0.1"
+        tools:text="ATTACK" />
+
+    <TextView
+        android:id="@+id/statThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="81dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statTwo"
+        app:layout_constraintVertical_bias="0.13"
+        tools:text="DEFENSE" />
+
+    <TextView
+        android:id="@+id/statFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="27dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statThree"
+        app:layout_constraintVertical_bias="0.161"
+        tools:text="SPECIAL-ATTACK" />
+
+    <TextView
+        android:id="@+id/statFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="12dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statFour"
+        app:layout_constraintVertical_bias="0.193"
+        tools:text="SPECIAL-DEFENSE" />
+
+    <TextView
+        android:id="@+id/statSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="100dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statFive"
+        app:layout_constraintVertical_bias="0.384"
+        tools:text="SPEED" />
+
+    <TextView
+        android:id="@+id/statSixValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@id/horizontal_loading_bar_6"
+        app:layout_constraintTop_toBottomOf="@id/statFiveValue"
+        app:layout_constraintVertical_bias="0.4"
+        tools:text="160" />
+
+    <TextView
+        android:id="@+id/statOneValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@id/horizontal_loading_bar_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        tools:text="10" />
+
+    <TextView
+        android:id="@+id/statTwoValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/horizontal_loading_bar_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/statOneValue"
+        app:layout_constraintVertical_bias="0.099"
+        tools:text="40" />
+
+    <TextView
+        android:id="@+id/statThreeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/horizontal_loading_bar_3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/statTwoValue"
+        app:layout_constraintVertical_bias="0.129"
+        tools:text="230" />
+
+    <TextView
+        android:id="@+id/statFourValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@id/horizontal_loading_bar_4"
+        app:layout_constraintTop_toBottomOf="@id/statThreeValue"
+        app:layout_constraintVertical_bias="0.162"
+        tools:text="150" />
+
+    <TextView
+        android:id="@+id/statFiveValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@id/horizontal_loading_bar_5"
+        app:layout_constraintTop_toBottomOf="@id/statFourValue"
+        app:layout_constraintVertical_bias="0.203"
+        tools:text="130" />
+
+    <ProgressBar
+        android:id="@+id/horizontal_loading_bar_1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:minWidth="150dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <ProgressBar
+        android:id="@+id/horizontal_loading_bar_2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:minWidth="150dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_loading_bar_1"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <ProgressBar
+        android:id="@+id/horizontal_loading_bar_3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:minWidth="150dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_loading_bar_2"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <ProgressBar
+        android:id="@+id/horizontal_loading_bar_4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:minWidth="150dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_loading_bar_3"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <ProgressBar
+        android:id="@+id/horizontal_loading_bar_5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:minWidth="150dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_loading_bar_4"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <ProgressBar
+        android:id="@+id/horizontal_loading_bar_6"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:minWidth="150dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_loading_bar_5"
+        app:layout_constraintVertical_bias="0.492" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
